@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIVAPOS v2</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="AdminLTE/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="AdminLTE/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="AdminLTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="AdminLTE/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="AdminLTE/plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="AdminLTE/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            </div>
+            <!-- Message End -->
+          </a>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">DIVAPOS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+                <a href="./dashboard.html" class="nav-link">
+                  <i class="fa fa-home"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-desktop"></i>
+                  <p>Master
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;">
+                  <li class="nav-item">
+                    <a href="barangg.html" class="nav-link active">
+                      <i class="fa fa-fw fa-cubes"></i>
+                      <p> Barang</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="barcode.html" class="nav-link">
+                      <i class="fa fa-fw fa-barcode"></i>
+                      <p>Barcode</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="supplier.html" class="nav-link">
+                      <i class="fa fa-fw fa-address-card"></i>
+                      <p>Supplier</p>
+                    </a>
+                  <li class="nav-item">
+                    <a href="pelanggan.html" class="nav-link">
+                      <i class="fa fa-fw fa-address-book"></i>
+                      <p>Pelanggan</p>
+                    </a>
+                    <li class="nav-item">
+                      <a href="stokopname.html" class="nav-link">
+                        <i class="fa fa-fw fa-cube"></i>
+                        <p>Stok Opname</p>
+                      </a>
+                    </li>
+                  </li>
+                </ul>
+              <li class="nav-item">
+                <a href="kasir.html" class="nav-link">
+                  <i class="fa fa-th"></i>
+                  <p>Kasir</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-server" aria-hidden="true"></i>
+                  <p>Transaksi
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+              <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-shopping-bag"></i>
+                  <p>
+                    Penjualan 
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/examples/login.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Per Periode</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/register.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Per Barang</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+                  <li class="nav-item">
+                      <a href="pembelian.html" class="nav-link">
+                        <i class="fa fa-fw fa-shopping-basket"></i>
+                        <p>Pembelian</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="piutang.html" class="nav-link">
+                        <i class="fa fa-fw fa-calendar"></i>
+                        <p>Piutang</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="hutang.html" class="nav-link">
+                      <i class="fa fa-calculator"></i>
+                        <p>Hutang </p>
+                    </a>
+                  </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-sticky-note"></i>
+                  <p>
+                    Return
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/examples/login.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Penjualan</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/register.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Pembelian</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>
+                  <p>Laporan
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;">
+                <li class="nav-item">
+                    <a href="kas.html" class="nav-link">
+                      <i class="fa fa-book fa-fw"></i>
+                        <p>Kas </p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="labarugi.html" class="nav-link">
+                      <i class="fa fa-fax"></i>
+                        <p>Laba rugi </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="grafik.html" class="nav-link">
+                      <i class="ion ion-stats-bars"></i>
+                        <p>Grafik </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="cetak.html" class="nav-link">
+                      <i class="fa fa-print"></i>
+                        <p>Cetak </p>
+                      </a>
+                    </li>
+                </li>
+              </ul>
+                <li class="nav-item">
+                <a href="pengguna.html" class="nav-link">
+                  <i class="fa fa-user"></i>
+                  <p>Pengguna</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pengaturan.html" class="nav-link">
+                  <i class="fa fa-cog"></i>
+                  <p>Pengaturan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="hakakses.html" class="nav-link">
+                  <i class="fa fa-lock"></i>
+                  <p>Hak Akses</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="logout.html" class="nav-link">
+                  <i class="fa fa-sign-out-alt"></i>
+                  <p>Keluar</p>
+                </a>
+              </li>
+            </nav>
+            </div>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+<style>
+    .checkbox-header {
+        font-size: 20px;
+    }
+    
+    .checkbox-sub {
+        margin-left: 15px;
+    }
+    
+    .checkbox-sub2 {
+        margin-left: 30px;
+    }
+    </style>
+
+<div class="content-wrapper">
+    <div class="content-header"> 
+          <div class="col-sm-12">
+            <ol class="breadcrumb float-sm-right">
+            </ol>
+   
+<div class="col-md-10">
+    <!-- Custom Tabs -->
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs badge-light">
+                        <div class="card-header with-border">
+                        <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Master</a></li></div>
+                        <div class="card-header with-border">
+                        <li><a href="#tab_2" data-toggle="tab" aria-expanded="true">Kasir</a></li></div>
+                        <div class="card-header with-border">
+                        <li><a href="#tab_3" data-toggle="tab" aria-expanded="true">Operator</a></li></div>
+                        <div class="card-header with-border">
+                        <li><a href="#tab_17" data-toggle="tab" aria-expanded="true">Kasir</a></li></div>
+                        <div class="card-header with-border">
+                        <li class="pull-right"><a href="#" id="tambah_akses"><i class="fa fa-gear"></i> Kelola</a></li></div>
+        </ul>
+        <div class="tab-content">
+            
+<div class="tab-pane active" id="tab_1">
+    <div class="well well-sm"><b>Pengaturan Hak Akses Master</b></div>
+    <form id="formMaster">
+        <div class="table-responsive">
+
+            <table class="table badge-light">
+                <tbody><tr>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="dashboard" value="1" checked="">Dashboard</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="master" value="1" checked="">Master</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barang" value="1" checked="">Barang</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barcode" value="1" checked="">Barcode</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="supplier" value="1" checked="">Supplier</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="pelanggan" value="1" checked="">Pelanggan</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="stok_opname" value="1" checked="">Stok Opname</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="kasir" value="1" checked="">Kasir</label></div>
+                        <div class="checkbox  checkbox-header"><label><input type="checkbox" name="transaksi" value="1" checked="">Transaksi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_penjualan" value="1" checked="">Penjualan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_pembelian" value="1" checked="">Pembelian</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_piutang" value="1" checked="">Piutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_hutang" value="1" checked="">Hutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_return" value="1" checked="">Return</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_penjualan" value="1" checked="">Return Penjualan</label>
+                        </div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_pembelian" value="1" checked="">Return Pembelian</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="laporan" value="1" checked="">Laporan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_kas" value="1" checked="">Kas</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_laba_rugi" value="1" checked="">Laba Rugi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_grafik" value="1" checked="">Grafik</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input disabled="" type="checkbox" name="pengguna" value="1" checked="">Pengguna</label>
+                        </div>
+                        <div class="checkbox checkbox-header"><label><input disabled="" type="checkbox" name="pengaturan" value="1" checked="">Pengaturan</label></div>
+                        <div class="checkbox checkbox-header"><label><input disabled="" type="checkbox" name="hak_akses" value="1" checked="">Hak Akses</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </form>
+    <button class="btn btn-primary" name="saveMaster" id="saveMaster">Simpan</button>
+</div>
+
+<div class="tab-pane " id="tab_2">
+    <div class="well well-sm"><b>Pengaturan Hak Akses Kasir</b></div>
+    <form id="formKasir">
+        <div class="table-responsive">
+
+            <table class="table">
+                <tbody><tr>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="dashboard" value="1">Dashboard</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="master" value="1" checked="">Master</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barang" value="1" checked="">Barang</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barcode" value="1">Barcode</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="supplier" value="1">Supplier</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_tambah" value="1">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="pelanggan" value="1">Pelanggan</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_tambah" value="1">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="stok_opname" value="1">Stok Opname</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="kasir" value="1" checked="">Kasir</label></div>
+                        <div class="checkbox  checkbox-header"><label><input type="checkbox" name="transaksi" value="1">Transaksi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_penjualan" value="1">Penjualan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_pembelian" value="1">Pembelian</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_piutang" value="1">Piutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_hutang" value="1">Hutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_return" value="1">Return</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_penjualan" value="1">Return Penjualan</label>
+                        </div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_pembelian" value="1">Return Pembelian</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="laporan" value="1">Laporan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_kas" value="1">Kas</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_laba_rugi" value="1">Laba Rugi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_grafik" value="1">Grafik</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengguna" value="1">Pengguna</label>
+                        </div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengaturan" value="1">Pengaturan</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="hak_akses" value="1">Hak Akses</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </form>
+    <button class="btn btn-primary" name="saveKasir" id="saveKasir">Simpan</button>
+</div>
+
+<div class="tab-pane " id="tab_3">
+    <div class="well well-sm"><b>Pengaturan Hak Akses Operator</b></div>
+    <form id="formOperator">
+        <div class="table-responsive">
+
+            <table class="table">
+                <tbody><tr>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="dashboard" value="1">Dashboard</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="master" value="1" checked="">Master</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barang" value="1" checked="">Barang</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barcode" value="1" checked="">Barcode</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="supplier" value="1" checked="">Supplier</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="pelanggan" value="1" checked="">Pelanggan</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_import" value="1" checked="">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_edit" value="1" checked="">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_hapus" value="1" checked="">Hapus</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="stok_opname" value="1">Stok Opname</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="kasir" value="1">Kasir</label></div>
+                        <div class="checkbox  checkbox-header"><label><input type="checkbox" name="transaksi" value="1">Transaksi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_penjualan" value="1">Penjualan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_pembelian" value="1">Pembelian</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_piutang" value="1">Piutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_hutang" value="1">Hutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_return" value="1">Return</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_penjualan" value="1">Return Penjualan</label>
+                        </div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_pembelian" value="1">Return Pembelian</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="laporan" value="1">Laporan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_kas" value="1">Kas</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_laba_rugi" value="1">Laba Rugi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_grafik" value="1">Grafik</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengguna" value="1">Pengguna</label>
+                        </div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengaturan" value="1">Pengaturan</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="hak_akses" value="1">Hak Akses</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </form>
+    <button class="btn btn-primary" name="saveOperator" id="saveOperator">Simpan</button>
+</div>
+
+<div class="tab-pane " id="tab_17">
+    <div class="well well-sm"><b>Pengaturan Hak Akses Kasir</b></div>
+    <form id="formKasir">
+        <div class="table-responsive">
+
+            <table class="table">
+                <tbody><tr>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="dashboard" value="1">Dashboard</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="master" value="1" checked="">Master</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barang" value="1" checked="">Barang</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_tambah" value="1" checked="">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="barang_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="barcode" value="1">Barcode</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="supplier" value="1">Supplier</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_tambah" value="1">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="supplier_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="pelanggan" value="1">Pelanggan</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_tambah" value="1">Tambah</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_import" value="1">Import</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_edit" value="1">Edit</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="pelanggan_hapus" value="1">Hapus</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="stok_opname" value="1">Stok Opname</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="kasir" value="1" checked="">Kasir</label></div>
+                        <div class="checkbox  checkbox-header"><label><input type="checkbox" name="transaksi" value="1">Transaksi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_penjualan" value="1">Penjualan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_pembelian" value="1">Pembelian</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_piutang" value="1">Piutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_hutang" value="1">Hutang</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="transaksi_return" value="1">Return</label></div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_penjualan" value="1">Return Penjualan</label>
+                        </div>
+                        <div class="checkbox checkbox-sub2"><label><input type="checkbox" name="transaksi_return_pembelian" value="1">Return Pembelian</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="laporan" value="1">Laporan</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_kas" value="1">Kas</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_laba_rugi" value="1">Laba Rugi</label></div>
+                        <div class="checkbox checkbox-sub"><label><input type="checkbox" name="laporan_grafik" value="1">Grafik</label></div>
+                    </td>
+                    <td>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengguna" value="1">Pengguna</label>
+                        </div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="pengaturan" value="1">Pengaturan</label></div>
+                        <div class="checkbox checkbox-header"><label><input type="checkbox" name="hak_akses" value="1">Hak Akses</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </form>
+    <button class="btn btn-primary" name="saveKasir" id="saveKasir">Simpan</button>
+</div>
+
+        </div>
+    </div>
+</div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <section class="col-lg-5 connectedSortable">
+
+          </section>
+        </div>
+       
+      </div>
+    </section>
+  </div>
+  
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0-rc
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="AdminLTE/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="AdminLTE/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="AdminLTE/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="AdminLTE/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="AdminLTE/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="AdminLTE/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="AdminLTE/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="AdminLTE/plugins/moment/moment.min.js"></script>
+<script src="AdminLTE/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="AdminLTE/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="AdminLTE/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="AdminLTE/dist/js/pages/dashboard.js"></script>
+</body>
+</html>

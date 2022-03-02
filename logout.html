@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIVAPOS v2</title>
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="AdminLTE/bower_components/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
+
+<link rel="stylesheet" href="AdminLTE/dist/css/AdminLTE.min.css">
+
+<link rel="stylesheet" href="AdminLTE/plugins/iCheck/square/blue.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+ <script>(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
+</head>
+
+          <body class="hold-transition login-page">
+        <div class="login-box">
+
+          <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h1"><b>DIVAPOS</b> LOGIN</a>
+  </div>
+           <div class="card-body">
+          <p class="login-box-msg">Masuk dengan username dan password</p>  
+          
+            <form action="dashboard.html" method="post">  
+              <div class="form-group has-feedback"> 
+               <select name="username" class="form-control">
+                <option>admin</option>
+                <option>kasir</option>
+                <option>marketing</option>
+                <option>operator</option>
+                <option>sales</option>
+                <option>indi/s1</option>
+                <option>indi/s2</option>
+                <option>yasona/s1</option>
+                <option>yasona/s2</option>
+                <option>haekhal/s1</option>
+                <option>haekhal/s2</option>
+                <option>laras/s1</option>
+                <option>laras/s2</option> 
+               </select>
+                 <span class="glyphicon glyphicon-user form-control-feedback"></span> 
+                 </div> 
+                  <div class="form-group has-feedback"> 
+                     <input focus="true" type="password" class="form-control" placeholder="Password" name="password">
+                       <span class="glyphicon glyphicon-lock form-control-feedback"></span> 
+                       </div> 
+                        <div class="row">  
+                         <!-- /.col -->  
+                         <div class="col-xs-12"> 
+                          <button type="submit" class="btn btn-primary btn-lg btn-block bg-purple-gradient">Masuk</button>
+                           <br>
+                            <a href="gantiakses.html" class="btn btn-success btn-sm btn-block">Ganti Akses</a>
+                           </div>  
+                           <!-- /.col --> 
+                           </div> 
+                           </form> 
+                            <!-- /.social-auth-links --> 
+                          </div> 
+                          <!-- /.login-box-body --> 
+                        </div> 
+</body>
+
+
+<script src="AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="AdminLTE/plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' /* optional */
+    });
+  });
+</script>
+</body>
+</html>
